@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ffffff,
+    #abbaab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #abbaab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.app__header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app__header > h1 {
+  color: red;
+  font-size: 2rem;
+  text-shadow: 2px 2px #141111;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 770px) {
+  .app {
+    flex-direction: column;
+  }
+}
